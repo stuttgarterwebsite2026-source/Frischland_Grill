@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frischland Grill – Frisch & herzhaft vom Grill in Gerlingen</title>
+    <meta
+      name="description"
+      content="Frischland Grill in Gerlingen – frische Zutaten, herzhaft gegrillt. Döner, Burger & Grillplatten. Jetzt entdecken, anrufen oder vorbeikommen."
+    />
+    <meta name="theme-color" content="#1a1816" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Frischland Grill – Gerlingen" />
+    <meta
+      property="og:description"
+      content="Frische Zutaten, herzhaft gegrillt. Döner, Burger & Grillplatten in Gerlingen."
+    />
+    <meta property="og:type" content="restaurant" />
+
+    <!-- Favicon (Platzhalter-Emoji) -->
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- ============================ NAVBAR ============================ -->
+    <header class="navbar" id="navbar">
+      <div class="navbar__inner">
+        <!-- Logo-Platzhalter: später durch <img src="assets/logo/frischland-grill.svg"> ersetzen -->
+        <a href="#start" class="brand" aria-label="Frischland Grill – Startseite">
+          <span class="brand__mark" aria-hidden="true">🔥</span>
+          <span class="brand__text">
+            <strong>Frischland</strong> Grill
+            <small>Frisch · Vom Grill</small>
+          </span>
+        </a>
+
+        <div class="nav__menu">
+          <nav class="nav-links" id="nav-links" aria-label="Hauptnavigation">
+            <a href="#start" class="nav-link" data-spy data-i18n="nav.start">Start</a>
+            <a href="#menu" class="nav-link" data-spy data-i18n="nav.menu">Menü</a>
+            <a href="#oeffnungszeiten" class="nav-link" data-spy data-i18n="nav.hours">Öffnungszeiten</a>
+            <a href="#kontakt" class="nav-link" data-spy data-i18n="nav.contact">Kontakt</a>
+
+            <!-- Sprach-Toggle -->
+            <div
+              class="lang-switch"
+              role="group"
+              data-i18n-attr="aria-label:nav.langLabel"
+              aria-label="Sprache wechseln"
+            >
+              <button type="button" class="lang-btn" data-lang-btn="de" aria-pressed="true">DE</button>
+              <button type="button" class="lang-btn" data-lang-btn="en" aria-pressed="false">EN</button>
+            </div>
+          </nav>
+
+          <button
+            type="button"
+            class="nav-toggle"
+            id="nav-toggle"
+            aria-expanded="false"
+            aria-controls="nav-links"
+            data-i18n-attr="aria-label:nav.menuToggle"
+            aria-label="Menü öffnen"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============================ HERO ============================ -->
+      <section class="hero" id="start">
+        <div class="hero__bg" role="img" aria-label="Saftiges Grillfleisch über offener Flamme"></div>
+        <div class="hero__overlay"></div>
+
+        <div class="container hero__inner">
+          <span class="hero__badge" data-i18n="hero.badge">Frisch · Herzhaft · Vom Grill</span>
+          <h1 class="hero__title">
+            <span data-i18n="hero.title">Frischland Grill</span>
+          </h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle">
+            Frische Zutaten, herzhaft gegrillt. Döner, Burger & Grillplatten – mitten in Gerlingen.
+          </p>
+
+          <!-- Live-Status -->
+          <div class="status-pill is-closed" data-live-status>
+            <span class="status-dot" aria-hidden="true"></span>
+            <span class="status-label">Status</span>
+          </div>
+
+          <div class="hero__actions">
+            <a href="tel:" class="btn btn--fire" data-phone-link>
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <span data-i18n="hero.callBtn">Anrufen / Bestellen</span>
+            </a>
+            <a href="#" class="btn btn--light" data-maps-link target="_blank" rel="noopener">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span data-i18n="hero.routeBtn">Route planen</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="#menu" class="hero__scroll" aria-hidden="true">⌄</a>
+      </section>
+
+      <!-- ============================ MENU ============================ -->
+      <section class="section" id="menu">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="section__eyebrow" data-i18n="menu.subtitle">Frisch zubereitet</span>
+            <h2 class="section__title" data-i18n="menu.title">Unsere Karte</h2>
+            <div>
+              <span class="menu-note">
+                <span aria-hidden="true">ℹ️</span>
+                <span data-i18n="menu.placeholderNote">Beispielkarte – finale Preise und Gerichte folgen.</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Menü wird aus js/menu-data.js gerendert -->
+          <div class="menu-grid" id="menu-grid"></div>
+        </div>
+      </section>
+
+      <!-- ====================== OPENING HOURS ======================= -->
+      <section class="section section--alt" id="oeffnungszeiten">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="section__eyebrow" data-i18n="hours.subtitle">Wir freuen uns auf dich</span>
+            <h2 class="section__title" data-i18n="hours.title">Öffnungszeiten</h2>
+          </div>
+
+          <div class="hours-wrap">
+            <div class="hours-card" data-reveal>
+              <!-- Live-Status-Banner -->
+              <div class="hours-status-banner is-closed" data-live-status>
+                <span class="status-dot" aria-hidden="true"></span>
+                <span class="status-label">Status</span>
+              </div>
+
+              <table class="hours-table">
+                <tbody id="hours-tbody"></tbody>
+              </table>
+            </div>
+
+            <aside class="hours-aside" data-reveal>
+              <h3 data-i18n="hero.callBtn">Anrufen / Bestellen</h3>
+              <p data-i18n="contact.subtitle">Komm vorbei oder ruf uns an.</p>
+              <a href="tel:" class="btn btn--fire" data-phone-link>
+                <span data-i18n="contact.callBtn">Anrufen</span>
+              </a>
+              <a href="#" class="btn btn--whatsapp" data-whatsapp target="_blank" rel="noopener">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.5 14.4c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.6.2-.2.3-.7.9-.8 1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.5-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5L9.3 6.9c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.1-.3-.2-.6-.3M12 2a10 10 0 0 0-8.6 15l-1.3 4.7 4.8-1.3A10 10 0 1 0 12 2"/>
+                </svg>
+                <span data-i18n="contact.whatsappBtn">WhatsApp</span>
+              </a>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========================== CONTACT ========================= -->
+      <section class="section" id="kontakt">
+        <div class="container">
+          <div class="section__head" data-reveal>
+            <span class="section__eyebrow" data-i18n="contact.subtitle">Komm vorbei</span>
+            <h2 class="section__title" data-i18n="contact.title">Standort & Kontakt</h2>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info" data-reveal>
+              <div class="contact-item">
+                <span class="contact-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 data-i18n="contact.addressTitle">Adresse</h4>
+                  <p>Weilimdorfer Str. 95<br />70839 Gerlingen</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 data-i18n="contact.phoneTitle">Telefon</h4>
+                  <p><a href="tel:" data-phone-link><span data-phone-text>[TELEFONNUMMER]</span></a></p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-item__icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </span>
+                <div>
+                  <h4 data-i18n="contact.hoursTitle">Öffnungszeiten</h4>
+                  <p>Mo–Sa: 09:00–21:00<br /><span data-i18n="hours.day.0">Sonntag</span>: <span data-i18n="hours.closed">Geschlossen</span></p>
+                </div>
+              </div>
+
+              <div class="contact-actions">
+                <a href="tel:" class="btn btn--fire btn--sm" data-phone-link>
+                  <span data-i18n="contact.callBtn">Anrufen</span>
+                </a>
+                <a href="#" class="btn btn--whatsapp btn--sm" data-whatsapp target="_blank" rel="noopener">
+                  <span data-i18n="contact.whatsappBtn">WhatsApp</span>
+                </a>
+                <a href="#" class="btn btn--ghost btn--sm" data-maps-link target="_blank" rel="noopener">
+                  <span data-i18n="contact.routeBtn">Route auf Google Maps</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Karte: lädt erst nach Cookie-Zustimmung -->
+            <div class="map-frame" data-reveal>
+              <div
+                class="map-placeholder-inner"
+                id="map-placeholder"
+                data-map-src="https://www.google.com/maps?q=Weilimdorfer+Str.+95,+70839+Gerlingen&output=embed"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                </svg>
+                <p data-i18n="cookie.text">
+                  Wir verwenden Cookies, um die Karte (Google Maps) anzuzeigen.
+                </p>
+                <button type="button" class="btn btn--fresh btn--sm" data-load-map>
+                  <span data-i18n="cookie.accept">Karte laden</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================ FOOTER ============================ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__col">
+            <a href="#start" class="brand">
+              <span class="brand__mark" aria-hidden="true">🔥</span>
+              <span class="brand__text">
+                <strong>Frischland</strong> Grill
+                <small>Frisch · Vom Grill</small>
+              </span>
+            </a>
+            <p class="footer__tagline" data-i18n="footer.tagline">
+              Frische Zutaten, herzhaft gegrillt – dein Imbiss in Gerlingen.
+            </p>
+          </div>
+
+          <div class="footer__col">
+            <h4 data-i18n="footer.navTitle">Navigation</h4>
+            <ul>
+              <li><a href="#start" data-i18n="nav.start">Start</a></li>
+              <li><a href="#menu" data-i18n="nav.menu">Menü</a></li>
+              <li><a href="#oeffnungszeiten" data-i18n="nav.hours">Öffnungszeiten</a></li>
+              <li><a href="#kontakt" data-i18n="nav.contact">Kontakt</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 data-i18n="footer.contactTitle">Kontakt</h4>
+            <ul>
+              <li>Weilimdorfer Str. 95</li>
+              <li>70839 Gerlingen</li>
+              <li><a href="tel:" data-phone-link><span data-phone-text>[TELEFONNUMMER]</span></a></li>
+            </ul>
+          </div>
+
+          <div class="footer__col">
+            <h4 data-i18n="footer.hoursTitle">Öffnungszeiten</h4>
+            <ul class="footer__hours">
+              <li><span><span data-i18n="hours.day.1">Montag</span> – <span data-i18n="hours.day.6">Samstag</span></span><span>09–21</span></li>
+              <li><span data-i18n="hours.day.0">Sonntag</span><span data-i18n="hours.closed">Geschlossen</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© <span data-year>2026</span> Frischland Grill. <span data-i18n="footer.rights">Alle Rechte vorbehalten.</span></span>
+          <nav class="footer__legal-links" aria-label="Rechtliches">
+            <a href="impressum.html" data-i18n="footer.imprint">Impressum</a>
+            <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ========================= COOKIE BANNER ======================= -->
+    <div
+      class="cookie-banner"
+      id="cookie-banner"
+      role="dialog"
+      aria-live="polite"
+      aria-label="Cookie-Hinweis"
+      hidden
+    >
+      <span class="cookie-banner__icon" aria-hidden="true">🍪</span>
+      <p class="cookie-banner__text">
+        <span data-i18n="cookie.text">Wir verwenden Cookies, um die Karte (Google Maps) anzuzeigen und die Website zu verbessern.</span>
+        <a href="datenschutz.html" data-i18n="cookie.more">Mehr erfahren</a>
+      </p>
+      <div class="cookie-banner__actions">
+        <button type="button" class="btn btn--ghost btn--sm" data-cookie-decline data-i18n="cookie.decline">Ablehnen</button>
+        <button type="button" class="btn btn--fire btn--sm" data-cookie-accept data-i18n="cookie.accept">Akzeptieren</button>
+      </div>
+    </div>
+
+    <!-- Scripts: Daten zuerst, dann Logik -->
+    <script src="js/config.js"></script>
+    <script src="js/translations.js"></script>
+    <script src="js/menu-data.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
