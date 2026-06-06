@@ -261,51 +261,29 @@ ul {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: -0.01em;
-  color: var(--charcoal);
+  padding: 6px 12px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
+  line-height: 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.brand__mark {
-  display: grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: var(--grad-fire);
-  color: #fff;
-  font-size: 1.35rem;
-  box-shadow: var(--shadow-sm);
+.brand:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md, 0 8px 20px rgba(0, 0, 0, 0.12));
+}
+
+.brand__logo {
+  display: block;
+  height: 40px;
+  width: auto;
   flex-shrink: 0;
 }
 
-.brand__text strong {
-  color: var(--fire);
-}
-
-.brand__text small {
-  display: block;
-  font-family: var(--font-body);
-  font-weight: 500;
-  font-size: 0.62rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-
 /* Auf transparenter Navbar (über Hero) heller Text */
-.navbar:not(.is-scrolled) .brand,
 .navbar:not(.is-scrolled) .nav-link {
   color: #fff;
-}
-.navbar:not(.is-scrolled) .brand__text small {
-  color: rgba(255, 255, 255, 0.75);
-}
-.navbar:not(.is-scrolled) .brand__text strong {
-  color: #ffd9b0;
 }
 
 .nav__menu {
@@ -985,14 +963,10 @@ ul {
 }
 
 .footer .brand {
-  color: #fff;
   margin-bottom: 0.9rem;
 }
-.footer .brand__text small {
-  color: rgba(255, 255, 255, 0.6);
-}
-.footer .brand__text strong {
-  color: var(--ember-soft);
+.footer .brand__logo {
+  height: 38px;
 }
 
 .footer__tagline {

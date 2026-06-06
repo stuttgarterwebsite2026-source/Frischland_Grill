@@ -18,11 +18,9 @@
     />
     <meta property="og:type" content="restaurant" />
 
-    <!-- Favicon (Platzhalter-Emoji) -->
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>"
-    />
+    <!-- Favicon: Frischland-Grill-Logo (Hähnchen-Emblem) -->
+    <link rel="icon" type="image/svg+xml" href="assets/logo/favicon.svg" />
+    <link rel="apple-touch-icon" href="assets/logo/favicon.svg" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,13 +36,14 @@
     <!-- ============================ NAVBAR ============================ -->
     <header class="navbar" id="navbar">
       <div class="navbar__inner">
-        <!-- Logo-Platzhalter: später durch <img src="assets/logo/frischland-grill.svg"> ersetzen -->
         <a href="#start" class="brand" aria-label="Frischland Grill – Startseite">
-          <span class="brand__mark" aria-hidden="true">🔥</span>
-          <span class="brand__text">
-            <strong>Frischland</strong> Grill
-            <small>Frisch · Vom Grill</small>
-          </span>
+          <img
+            src="assets/logo/frischland-grill-logo.png"
+            alt="Frischland Grill"
+            class="brand__logo"
+            width="756"
+            height="240"
+          />
         </a>
 
         <div class="nav__menu">
@@ -267,11 +266,13 @@
         <div class="footer__grid">
           <div class="footer__col">
             <a href="#start" class="brand">
-              <span class="brand__mark" aria-hidden="true">🔥</span>
-              <span class="brand__text">
-                <strong>Frischland</strong> Grill
-                <small>Frisch · Vom Grill</small>
-              </span>
+              <img
+                src="assets/logo/frischland-grill-logo.png"
+                alt="Frischland Grill"
+                class="brand__logo"
+                width="756"
+                height="240"
+              />
             </a>
             <p class="footer__tagline" data-i18n="footer.tagline">
               Frische Zutaten, herzhaft gegrillt – dein Imbiss in Gerlingen.
